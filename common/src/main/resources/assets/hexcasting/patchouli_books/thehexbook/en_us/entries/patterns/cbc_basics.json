@@ -1,0 +1,42 @@
+{
+  "name": "hexcasted.entry.cbc_basics",
+  "category": "hexcasting:patterns",
+  "icon": "minecraft:wooden_shovel",
+  "sortnum": 10,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcasted:shell_get_on_tick",
+      "anchor": "hexcasted:shell_get_on_tick",
+      "input": "shell",
+      "output": "[pattern]",
+      "text": "hexcasted.page.cbc_basics.shell_get_on_tick"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcasted:shell_set_on_tick",
+      "anchor": "hexcasted:shell_set_on_tick",
+      "input": "shell, [pattern]",
+      "output": "",
+      "text": "hexcasted.page.cbc_basics.shell_set_on_tick"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcasted:shell_get_on_detonate",
+      "anchor": "hexcasted:shell_get_on_detonate",
+      "input": "shell",
+      "output": "[pattern]",
+      "text": "hexcasted.page.cbc_basics.shell_get_on_detonate"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcasted:shell_set_on_detonate",
+      "anchor": "hexcasted:shell_set_on_detonate",
+      "input": "shell, [pattern]",
+      "output": "",
+      "text": "hexcasted.page.cbc_basics.shell_set_on_detonate"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hexcasted",
+  "version": "${version}",
+  "name": "Hexcasted",
+  "description": "A Hexcasting x Create: Big Cannons Addon",
+  "authors": [
+    "TechTastic"
+  ],
+  "contact": {
+    "homepage": "https://techtastic.github.io/hex-casted",
+    "sources": "https://github.com/TechTastic/hex-casted"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.techtastic.hexcasted.fabric.HexcastedFabric"
+      }
+    ]
+  },
+  "mixins": [
+    "hexcasted-common.mixins.json",
+    "hexcasted.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=${minecraftVersion}",
+    "fabricloader": ">=${fabricLoaderVersion}",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=${fabricKotlinVersion}",
+    "architectury": ">=${architecturyVersion}",
+    "hexcasting": ">=${hexcastingVersion}"
+  }
+}

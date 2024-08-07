@@ -1,0 +1,41 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[${forgeKotlinVersion},)"
+license = "MIT"
+
+[[mods]]
+modId = "hexcasted"
+version = "${version}"
+displayName = "Hexcasted"
+logoFile = "icon.png"
+authors = "TechTastic"
+description = '''
+A Hexcasting x Create: Big Cannons Addon
+'''
+
+[[dependencies.hexcasted]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forgeDependencyVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hexcasted]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraftVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hexcasted]]
+modId = "architectury"
+mandatory = true
+versionRange = "[${architecturyVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hexcasted]]
+modId = "hexcasting"
+mandatory = true
+versionRange = "[${hexcastingVersion},)"
+ordering = "NONE"
+side = "BOTH"
