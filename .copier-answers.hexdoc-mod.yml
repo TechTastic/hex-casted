@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier. NEVER EDIT MANUALLY
+# See: https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+_commit: v0.1.4
+_src_path: gh:hexdoc-dev/hexdoc-mod-template
+add_gitignore: true
+add_vscode: true
+advanced: false
+author: TechTastic
+book_id: hexcasted:hexcastedbook
+capitalize_platforms: false
+github_repo: https://github.com/TechTastic/hex-casted
+gradle_minecraft_version_key: minecraftVersion
+gradle_mod_version_key: modVersion
+mod_display_name: Hexcasted
+modid: hexcasted
+multiloader: true

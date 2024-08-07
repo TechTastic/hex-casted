@@ -5,34 +5,27 @@ requires = [
 ]
 build-backend = "hatchling.build"
 
-# project metadata
-
 [project]
 name = "hexdoc-hexcasted"
-description = "Python web book docgen and hexdoc plugin for Hexcasted."
+dynamic = ["version", "dependencies", "optional-dependencies"]
+description = "hexdoc plugin for Hexcasted's web book."
 readme = "doc/README.md"
 authors = [
     { name="TechTastic" },
 ]
-keywords = ["hexdoc"]
+keywords = [
+    "hexdoc",
+]
 requires-python = ">=3.11"
-dynamic = ["version", "dependencies", "optional-dependencies"]
 
 [project.urls]
-Homepage = "https://techtastic.github.io/hex-casted"
-Source = "https://github.com/TechTastic/hex-casted"
-
-# Gradle version/deps
-
-[tool.hatch.version]
-scheme = "gradle"
-source = "gradle-properties"
-py-path = "doc/src/hexdoc_hexcasted/__version__.py"
-key = "modVersion"
+Homepage = "https://techtastic.github.io/https://github.com/TechTastic/hex-casted/"
+Source = "https://github.com/TechTastic/https://github.com/TechTastic/hex-casted"
 
 [tool.hatch.metadata.hooks.gradle-properties]
 dependencies = [
-    { package="hexdoc-hexcasting", op="~=", py-version="1.0.dev20", key="hexcastingVersion" },
+    "hexdoc~=1!0.1.0a16",
+    { package="hexdoc-minecraft", op="~=", py-version="1.0.dev", key="minecraftVersion" },
 ]
 
 [tool.hatch.metadata.hooks.gradle-properties.optional-dependencies]
@@ -40,11 +33,18 @@ dev = [
     "ruff~=0.1.4",
 ]
 
-# directory inclusion
+[tool.hatch.version]
+scheme = "gradle"
+source = "gradle-properties"
+py-path = "doc/src/hexdoc_hexcasted/__version__.py"
+key = "modVersion"
+
+[project.entry-points.hexdoc]
+hexcasted = "hexdoc_hexcasted._hooks:HexcastedPlugin"
 
 [tool.hatch.build]
 only-include = [
-    "doc/src/hexdoc_hexcasted",
+    "doc/src",
     "gradle.properties",
 ]
 artifacts = [
@@ -54,13 +54,6 @@ artifacts = [
 
 [tool.hatch.build.targets.wheel]
 sources = ["doc/src"]
-
-# hexdoc entry points
-
-[project.entry-points.hexdoc]
-hexcasted = "hexdoc_hexcasted._hooks:HexcastedPlugin"
-
-# linting
 
 [tool.pyright]
 pythonVersion = "3.11"

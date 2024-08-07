@@ -1,34 +1,8 @@
-build/
-*.ipr
-run/
-*.iws
-out/
-*.iml
-.gradle/
-output/
-bin/
-libs/
-
-.classpath
-.project
-.idea/
-classes/
-.metadata
-.settings
-*.launch
-.DS_Store
-
-venv
-
-.architectury-transformer
-
 # hexdoc
-_site/
-_checkout/
+
+/_site/
 __gradle_version__.py
 .hexdoc*/
-
-.hexdoc-template-inputs.yml
 
 # Python
 
@@ -185,3 +159,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+/.gradle/
+/fabric/run/
+/forge/run/
+/fabric/.gradle/
+/forge/.gradle/
+/common/.gradle/
